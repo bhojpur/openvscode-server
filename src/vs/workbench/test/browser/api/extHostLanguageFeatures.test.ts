@@ -8,7 +8,7 @@ import { TestInstantiationService } from 'vs/platform/instantiation/test/common/
 import { setUnexpectedErrorHandler, errorHandler } from 'vs/base/common/errors';
 import { URI } from 'vs/base/common/uri';
 import * as types from 'vs/workbench/api/common/extHostTypes';
-import { createTextModel } from 'vs/editor/test/common/editorTestUtils';
+import { createTextModel } from 'vs/editor/test/common/testTextModel';
 import { Position as EditorPosition, Position } from 'vs/editor/common/core/position';
 import { Range as EditorRange } from 'vs/editor/common/core/range';
 import { TestRPCProtocol } from './testRPCProtocol';
@@ -44,7 +44,7 @@ import { CancellationToken } from 'vs/base/common/cancellation';
 import { nullExtensionDescription as defaultExtension } from 'vs/workbench/services/extensions/common/extensions';
 import { provideSelectionRanges } from 'vs/editor/contrib/smartSelect/smartSelect';
 import { mock } from 'vs/base/test/common/mock';
-import { IEditorWorkerService } from 'vs/editor/common/services/editorWorkerService';
+import { IEditorWorkerService } from 'vs/editor/common/services/editorWorker';
 import { dispose } from 'vs/base/common/lifecycle';
 import { withNullAsUndefined } from 'vs/base/common/types';
 import { NullApiDeprecationService } from 'vs/workbench/api/common/extHostApiDeprecationService';
